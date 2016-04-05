@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="userProfiles">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular User Profiles</title>
+  </head>
+  <body ng-controller="mainController">
+
+    <section>
+      <div ng-repeat="user in getUsers">
+        <div>
+          {{user.id}}
+          {{user.first_name}}
+          {{user.last_name}}
+          <img ng-src="{{user.avatar}}"
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="service.js"></script>
+  </body>
+</html>
